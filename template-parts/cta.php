@@ -20,8 +20,8 @@ $cta_heading = $cta_heading ?: 'VALMIS ALUSTAMA?';
 $cta_text = $cta_text ?: 'Broneeri oma tasuta konsultatsioon juba täna ja alustame teie ettevõtte personalijuhtimise paremaks tegemist!';
 $cta_primary_btn_text = $cta_primary_btn_text ?: 'Broneeri tasuta konsultatsioon';
 $cta_primary_btn_link = $cta_primary_btn_link ?: '/#broneerimine';
-$cta_secondary_btn_text = $cta_secondary_btn_text ?: 'Helista kohe';
-$cta_secondary_btn_link = $cta_secondary_btn_link ?: 'tel:+37256283286';
+$cta_secondary_btn_text = $cta_secondary_btn_text ?: 'Saada päring';
+$cta_secondary_btn_link = $cta_secondary_btn_link ?: '/kontakt/#saada-meile-sonum';
 $cta_email = $cta_email ?: 'info@kmpersonal.ee';
 ?>
 

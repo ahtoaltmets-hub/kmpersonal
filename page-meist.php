@@ -56,9 +56,7 @@ get_header(); ?>
                 <!-- Karen Mutle -->
                 <div class="team-member">
                     <div class="team-photo">
-                        <div class="team-photo-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/karen.jpg" alt="Karen Mutle">
                     </div>
                     <h3 class="team-name">Karen Mutle</h3>
                     <p class="team-role">Personalispetsialist & Töökeskkonna Ekspert</p>

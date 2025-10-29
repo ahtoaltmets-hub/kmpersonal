@@ -11,8 +11,17 @@
 .about-hero {
   background: linear-gradient(135deg, var(--dark-green) 0%, var(--darker-green) 100%);
   color: var(--white);
-  padding: 100px 20px 80px;
+  padding: 80px 20px 0 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.about-hero .container {
+  width: 100%;
+  max-width: 900px;
 }
 
 .about-hero .page-title {
@@ -128,6 +137,8 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .team-member:hover {
@@ -166,6 +177,10 @@
   font-weight: 700;
   color: var(--dark-green);
   margin-bottom: 8px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-role {
@@ -175,6 +190,10 @@
   margin-bottom: 24px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-description {
@@ -182,6 +201,7 @@
   line-height: 1.7;
   color: var(--text-body);
   margin-bottom: 24px;
+  flex-grow: 1;
 }
 
 .team-strengths {
@@ -306,7 +326,8 @@
 /* Mobile Responsive */
 @media (max-width: 767px) {
   .about-hero {
-    padding: 80px 20px 60px;
+    padding: 60px 20px 0 20px;
+    min-height: 300px;
   }
 
   .about-hero .page-title {

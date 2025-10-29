@@ -10,7 +10,7 @@ $testimonials_heading = get_field('testimonials_heading');
 $testimonials = get_field('testimonials');
 
 // Set defaults
-$testimonials_heading = $testimonials_heading ?: 'MIDA MEIE KLIENDID ÜTLEVAD';
+$testimonials_heading = $testimonials_heading ?: 'KLIENTIDE TAGASISIDE';
 
 // Default testimonials if ACF repeater is empty
 if (empty($testimonials)) {

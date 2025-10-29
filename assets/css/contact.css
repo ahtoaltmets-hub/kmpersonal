@@ -11,8 +11,17 @@
 .contact-hero {
   background: linear-gradient(135deg, var(--dark-green) 0%, var(--darker-green) 100%);
   color: var(--white);
-  padding: 100px 20px 80px;
+  padding: 80px 20px 0 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.contact-hero .container {
+  width: 100%;
+  max-width: 900px;
 }
 
 .contact-hero .page-title {
@@ -39,18 +48,7 @@
   font-weight: 700;
   padding: 16px 40px;
   border-radius: 50px;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 4px 20px rgba(182, 149, 179, 0.3);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 8px 30px rgba(182, 149, 179, 0.5);
-  }
+  box-shadow: 0 4px 20px rgba(182, 149, 179, 0.3);
 }
 
 /* Contact Content */
@@ -114,6 +112,12 @@
 
 .contact-icon i {
   font-size: 20px;
+  color: var(--white);
+}
+
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
   color: var(--white);
 }
 
@@ -307,10 +311,17 @@
   box-shadow: 0 8px 20px rgba(114, 74, 105, 0.3);
 }
 
+.social-link svg {
+  width: 24px;
+  height: 24px;
+  color: var(--white);
+}
+
 /* Mobile Responsive */
 @media (max-width: 767px) {
   .contact-hero {
-    padding: 80px 20px 60px;
+    padding: 60px 20px 0 20px;
+    min-height: 350px;
   }
 
   .contact-hero .page-title {

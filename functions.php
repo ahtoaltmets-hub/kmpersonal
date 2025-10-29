@@ -228,7 +228,7 @@ if (function_exists('acf_add_local_field_group')) {
                 ),
                 'default_value' => array(
                     array(
-                        'icon' => 'fa-arrows-alt',
+                        'icon' => 'fa-sync-alt',
                         'title' => 'Paindlikkus',
                         'description' => 'Iga organisatsioon on erinev – meie lahendused kohanduvad teie vajaduste, tempo ja tööstiiliga.',
                     ),
@@ -238,7 +238,7 @@ if (function_exists('acf_add_local_field_group')) {
                         'description' => 'Meie töös on keskmes inimene – kuulame, mõistame ja loome lahendusi, mis toetavad päriselt teie meeskonda.',
                     ),
                     array(
-                        'icon' => 'fa-chess',
+                        'icon' => 'fa-chess-knight',
                         'title' => 'Strateegia',
                         'description' => 'Tugev personalijuhtimine algab selgest eesmärgist – aitame teil ehitada süsteeme, mis toetavad pikaajalist kasvu.',
                     ),

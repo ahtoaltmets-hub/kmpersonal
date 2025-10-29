@@ -11,8 +11,17 @@
 .services-hero {
   background: linear-gradient(135deg, var(--dark-green) 0%, var(--darker-green) 100%);
   color: var(--white);
-  padding: 100px 20px 80px;
+  padding: 80px 20px 0 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.services-hero .container {
+  width: 100%;
+  max-width: 900px;
 }
 
 .services-hero .page-title {
@@ -64,6 +73,17 @@
   font-size: 64px;
   color: var(--dark-green);
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+}
+
+.service-detail-icon svg {
+  width: 64px;
+  height: 64px;
+  color: var(--dark-green);
 }
 
 .service-detail-title {
@@ -108,12 +128,20 @@
   color: var(--text-body);
 }
 
-.service-list li i {
+.service-list li::before {
+  content: "•";
   position: absolute;
-  left: 0;
-  top: 14px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--dark-green);
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.service-list li i {
+  display: none;
 }
 
 .service-highlight {
@@ -199,7 +227,8 @@
 /* Mobile Responsive */
 @media (max-width: 767px) {
   .services-hero {
-    padding: 80px 20px 60px;
+    padding: 60px 20px 0 20px;
+    min-height: 300px;
   }
 
   .services-hero .page-title {
@@ -227,6 +256,13 @@
 
   .service-detail-icon {
     font-size: 48px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .service-detail-icon svg {
+    width: 48px;
+    height: 48px;
   }
 
   .service-detail-title {

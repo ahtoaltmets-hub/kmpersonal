@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogi - KM Personal</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+
+    <style>
+        body { margin: 0; padding: 0; }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <!-- Logo -->
+            <div class="site-logo">
+                <a href="demo.html" rel="home">
+                    <img src="images/170afc4d-1820-4418-bcaf-1b47eab2a553.jpeg" alt="KM Personal">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="main-navigation">
+                <ul class="primary-menu">
+                    <li><a href="demo.html#teenused">Teenused</a></li>
+                    <li><a href="meist.html">Meist</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="blogi.html">Blogi</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.main-navigation').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="site-main blog-page">
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1 class="page-title">BLOGI</h1>
+            <p class="page-subtitle">Nipid, nõuanded ja uudised personalijuhtimise maailmast</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+
+            <div class="blog-grid">
+
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80" alt="Personalijuhtimine">
+                        <div class="blog-category">Personalijuhtimine</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 15. oktoober 2024</span>
+                        </div>
+                        <h2 class="blog-title">5 põhjust, miks väikeettevõte vajab personalispetsialisti</h2>
+                        <p class="blog-excerpt">Väikeettevõtted sageli arvavad, et personalitöö on midagi, millega saab hakkama ka ilma eraldi spetsialistita. Kuid tegelikkus näitab, et professionaalne personalijuhtimine võib olla edu võti...</p>
+                        <a href="#" class="blog-link">Loe edasi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Tööohutus">
+                        <div class="blog-category">Tööohutus</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 8. oktoober 2024</span>
+                        </div>
+                        <h2 class="blog-title">Tööohutuse ABC: mida peab iga tööandja teadma</h2>
+                        <p class="blog-excerpt">Tööohutus ei ole lihtsalt paberimajandus - see on töötajate heaolu ja ettevõtte edukuse alus. Vaatame üle olulisimad aspektid, mida iga tööandja peab teadma...</p>
+                        <a href="#" class="blog-link">Loe edasi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Meeskond">
+                        <div class="blog-category">Organisatsioonikultuur</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 1. oktoober 2024</span>
+                        </div>
+                        <h2 class="blog-title">Kuidas luua organisatsioonikultuuri, mis motiveerib</h2>
+                        <p class="blog-excerpt">Tugev organisatsioonikultuur ei teki juhuslikult - see nõuab teadlikku tööd ja pidevat tähelepanu. Jagame nippe, kuidas luua kultuur, kus töötajad tunnevad end väärtustatuna...</p>
+                        <a href="#" class="blog-link">Loe edasi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80" alt="Dokumendid">
+                        <div class="blog-category">Seadusandlus</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 24. september 2024</span>
+                        </div>
+                        <h2 class="blog-title">Töölepingu lõpetamine: sammud ja võimalikud vead</h2>
+                        <p class="blog-excerpt">Töölepingu lõpetamine on tundlik protsess, mis nõuab täpset seaduste järgimist. Vaatame üle kõige levinumad vead ja kuidas neid vältida...</p>
+                        <a href="#" class="blog-link">Loe edasi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80" alt="Arenguvestlus">
+                        <div class="blog-category">Töötajate arendamine</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 17. september 2024</span>
+                        </div>
+                        <h2 class="blog-title">Arenguvestluste läbiviimise kunst</h2>
+                        <p class="blog-excerpt">Arenguvestlused on võimas tööriist töötajate motiveerimiseks ja arendamiseks. Aga kuidas neid õigesti läbi viia? Jagame praktilisi nippe ja näiteid...</p>
+                        <a href="#" class="blog-link">Loe edasi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Analüütika">
+                        <div class="blog-category">HR-Tehnoloogia</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 10. september 2024</span>
+                        </div>
+                        <h2 class="blog-title">Digitaalsed lahendused personalitöös: millest alustada</h2>
+                        <p class="blog-excerpt">Tänapäeval on saadaval hulgaliselt digitaalseid tööriistu, mis muudavad personalitöö lihtsamaks ja efektiivsemaks. Aga kuidas valida õigeid lahendusi...</p>
+                        <a href="#" class="blog-link">Loe edasi <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="kontakt">
+        <div class="container">
+            <h2 class="cta-title">VALMIS ALUSTAMA?</h2>
+            <p class="cta-text">Broneeri oma tasuta konsultatsioon juba täna ja alustame teie ettevõtte personalijuhtimise paremaks tegemist!</p>
+
+            <div class="cta-buttons">
+                <a href="demo.html#broneerimine" class="btn btn-light btn-large">Broneeri tasuta konsultatsioon</a>
+                <a href="kontakt.html#saada-meile-sonum" class="btn btn-outline-light">Saada päring</a>
+            </div>
+
+            <div class="cta-contact-info">
+                <div class="cta-contact-grid">
+                    <div class="cta-contact-item">
+                        <h4>KMpersonal OÜ</h4>
+                        <p>Registrikood: 17286377</p>
+                        <p>KMKR: EE102882427</p>
+                        <p>IBAN: EE942200221092169893</p>
+                    </div>
+                    <div class="cta-contact-item">
+                        <h4>Telefon</h4>
+                        <p><a href="tel:+37256283286">+372 56283286</a></p>
+                    </div>
+                    <div class="cta-contact-item">
+                        <h4>Email</h4>
+                        <p><a href="mailto:karen@kmpersonal.ee">karen@kmpersonal.ee</a></p>
+                        <p><a href="mailto:marina@kmpersonal.ee">marina@kmpersonal.ee</a></p>
+                    </div>
+                    <div class="cta-contact-item">
+                        <h4><a href="kkk.html">KKK</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="decorative-circle circle-cta-1"></div>
+        <div class="decorative-circle circle-cta-2"></div>
+    </section>
+
+</main>
+
+<script src="assets/js/homepage.js"></script>
+
+<script>
+// Simple header hide/show on scroll
+(function() {
+    const header = document.querySelector('.site-header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 0) {
+            header.classList.remove('header-hidden');
+            return;
+        }
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            header.classList.add('header-hidden');
+        } else if (currentScroll < lastScroll) {
+            header.classList.remove('header-hidden');
+        }
+
+        lastScroll = currentScroll;
+    });
+})();
+</script>
+
+</body>
+</html>
