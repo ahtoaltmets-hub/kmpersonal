@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Icons</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: #214945;
+            color: white;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+        .test-icon {
+            font-size: 64px;
+            color: #B695B3;
+            margin: 30px;
+            display: inline-block;
+        }
+        .icon-name {
+            display: block;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Icon Debug Test</h1>
+    <p>Kui näed ikoone, siis Font Awesome töötab. Kui mitte, siis on laadimise probleem.</p>
+
+    <div class="test-icon">
+        <i class="fas fa-heart"></i>
+        <span class="icon-name">fas fa-heart</span>
+    </div>
+
+    <div class="test-icon">
+        <i class="fas fa-sync-alt"></i>
+        <span class="icon-name">fas fa-sync-alt</span>
+    </div>
+
+    <div class="test-icon">
+        <i class="fas fa-chess-knight"></i>
+        <span class="icon-name">fas fa-chess-knight</span>
+    </div>
+
+    <hr>
+
+    <div class="test-icon">
+        <i class="fa-solid fa-heart"></i>
+        <span class="icon-name">fa-solid fa-heart</span>
+    </div>
+
+    <div class="test-icon">
+        <i class="fa-solid fa-rotate"></i>
+        <span class="icon-name">fa-solid fa-rotate</span>
+    </div>
+
+    <div class="test-icon">
+        <i class="fa-solid fa-chess-knight"></i>
+        <span class="icon-name">fa-solid fa-chess-knight</span>
+    </div>
+
+    <script>
+        // Check if Font Awesome loaded
+        window.addEventListener('load', function() {
+            const icon = document.querySelector('.fas');
+            if (icon) {
+                const styles = window.getComputedStyle(icon, ':before');
+                console.log('Font family:', styles.fontFamily);
+                console.log('Content:', styles.content);
+
+                if (styles.fontFamily.includes('Font Awesome')) {
+                    document.body.innerHTML += '<p style="color: lime;">✓ Font Awesome LOADED!</p>';
+                } else {
+                    document.body.innerHTML += '<p style="color: red;">✗ Font Awesome NOT loaded!</p>';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
