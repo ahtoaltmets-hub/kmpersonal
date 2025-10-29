@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - KM Personal</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+    <style>
+        body { margin: 0; padding: 0; }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <!-- Logo -->
+            <div class="site-logo">
+                <a href="demo.html" rel="home">
+                    <img src="images/170afc4d-1820-4418-bcaf-1b47eab2a553.jpeg" alt="KM Personal">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="main-navigation">
+                <ul class="primary-menu">
+                    <li><a href="teenused.html">Teenused</a></li>
+                    <li><a href="meist.html">Meist</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.main-navigation').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="site-main contact-page">
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="page-title">RÄÄGIME!</h1>
+            <p class="page-subtitle">Võta meiega ühendust ja leiame vastuse igale personaliküsimusele!</p>
+            <div class="free-badge">ESIMENE KONSULTATSIOON TASUTA!</div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h2>Kontaktandmed</h2>
+                    <p>Oleme alati valmis aitama ja vastama teie personaliküsimustele. Võtke julgelt ühendust!</p>
+
+                    <div class="contact-details">
+
+                        <!-- Phone -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h3>Telefon</h3>
+                                <a href="tel:+37256283286">+372 5628 3286</a>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h3>E-mail</h3>
+                                <a href="mailto:karen@kmpersonal.ee">karen@kmpersonal.ee</a>
+                                <a href="mailto:marina@kmpersonal.ee">marina@kmpersonal.ee</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Company Info -->
+                    <div class="company-info">
+                        <h4>Ettevõtte andmed</h4>
+                        <div class="company-info-grid">
+                            <div class="company-info-item">
+                                <strong>Organisatsioon:</strong>
+                                KMpersonal OÜ
+                            </div>
+                            <div class="company-info-item">
+                                <strong>Registrikood:</strong>
+                                17286377
+                            </div>
+                            <div class="company-info-item">
+                                <strong>KMKR:</strong>
+                                EE102882427
+                            </div>
+                            <div class="company-info-item">
+                                <strong>IBAN:</strong>
+                                EE942200221092169893
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="social-media">
+                        <h4>Jälgi meid</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/KMpersonal" target="_blank" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Saada meile sõnum</h2>
+                    <p class="contact-form-intro">Meil on suur rõõm, et meile kirjutad! Täida vorm ja võtame teiega peagi ühendust.</p>
+
+                    <form class="contact-form" id="contactForm">
+
+                        <div class="form-group">
+                            <label for="name">Nimi *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                            <p class="form-note">Valikuline, kuid võimaldab meil teiega kiiremini ühendust võtta</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Teema *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Vali teema...</option>
+                                <option value="konsultatsioon">Tasuta konsultatsioon</option>
+                                <option value="paindlik-partner">Paindlik Personalipartner</option>
+                                <option value="siseaudit">Siseaudit</option>
+                                <option value="tookeskkond">Töökeskkond ja Tööohutus</option>
+                                <option value="uuringud">Personaliuuringud</option>
+                                <option value="tarkvarad">HR-Tarkvarad</option>
+                                <option value="vaikeettevotte">Personalijuht Väikeettevõttesse</option>
+                                <option value="muu">Muu küsimus</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Sõnum *</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <p class="form-note">Kirjelda palun oma vajadust või küsimust</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            Saada sõnum
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="kontakt">
+        <div class="container">
+            <h2 class="cta-title">VALMIS ALUSTAMA?</h2>
+            <p class="cta-text">Broneeri oma tasuta konsultatsioon juba täna ja alustame teie ettevõtte personalijuhtimise paremaks tegemist!</p>
+
+            <div class="cta-buttons">
+                <a href="demo.html#broneerimine" class="btn btn-light btn-large">Broneeri tasuta konsultatsioon</a>
+                <a href="tel:+37256283286" class="btn btn-outline-light">Helista kohe</a>
+            </div>
+
+            <div class="cta-contact-info">
+                <div class="cta-contact-grid">
+                    <div class="cta-contact-item">
+                        <h4>KMpersonal OÜ</h4>
+                        <p>Registrikood: 17286377</p>
+                        <p>KMKR: EE102882427</p>
+                        <p>IBAN: EE942200221092169893</p>
+                    </div>
+                    <div class="cta-contact-item">
+                        <h4>Telefon</h4>
+                        <p><a href="tel:+37256283286">+372 56283286</a></p>
+                    </div>
+                    <div class="cta-contact-item">
+                        <h4>Email</h4>
+                        <p><a href="mailto:karen@kmpersonal.ee">karen@kmpersonal.ee</a></p>
+                        <p><a href="mailto:marina@kmpersonal.ee">marina@kmpersonal.ee</a></p>
+                    </div>
+                    <div class="cta-contact-item">
+                        <h4><a href="kkk.html">KKK</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="decorative-circle circle-cta-1"></div>
+        <div class="decorative-circle circle-cta-2"></div>
+    </section>
+
+</main>
+
+<script src="assets/js/homepage.js"></script>
+
+<script>
+// Simple header hide/show on scroll
+(function() {
+    const header = document.querySelector('.site-header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 0) {
+            header.classList.remove('header-hidden');
+            return;
+        }
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            header.classList.add('header-hidden');
+        } else if (currentScroll < lastScroll) {
+            header.classList.remove('header-hidden');
+        }
+
+        lastScroll = currentScroll;
+    });
+})();
+
+// Contact form handling
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Sõnum saadetud! (Demo versioon - tegelikult ei saada)');
+});
+</script>
+
+</body>
+</html>

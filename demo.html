@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KM Personal - Demo</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/homepage.css">
+
+    <style>
+        /* Quick fixes for demo without WordPress */
+        body { margin: 0; padding: 0; }
+        .site-main { overflow-x: hidden; }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <!-- Logo -->
+            <div class="site-logo">
+                <a href="#" rel="home">
+                    <img src="images/170afc4d-1820-4418-bcaf-1b47eab2a553.jpeg" alt="KM Personal">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="main-navigation">
+                <ul class="primary-menu">
+                    <li><a href="teenused.html">Teenused</a></li>
+                    <li><a href="meist.html">Meist</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.main-navigation').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="site-main">
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80');">
+        <div class="hero-overlay">
+            <div class="hero-content container">
+                <div class="hero-badge">Esimene konsultatsioon TASUTA!</div>
+                <h1 class="hero-title">KAASA PERSONALIPARTNER<br>TÄPSELT SIIS, KUI VAJAD!</h1>
+                <p class="hero-subtitle">Pakume paindlikke ja professionaalseid personalilahendusi ettevõtetele, kes vajavad teadmisi, süsteeme ja tuge – ilma täiskohaga personalispetsialisti palkamata</p>
+                <div class="hero-buttons">
+                    <a href="#kontakt" class="btn btn-primary">Broneeri konsultatsioon</a>
+                    <a href="teenused.html" class="btn btn-secondary">Vaata teenuseid</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION SECTION -->
+    <section class="mission" id="meist">
+        <div class="container">
+            <h2 class="section-title">MEIE EESMÄRK</h2>
+            <p class="mission-text">Viia professionaalne personalijuhtimine igasse organisatsiooni – sõltumata töötajate arvust või tegevuspiirkonnast. Meie eesmärk on muuta personalitugi kättesaadavaks ka neile ettevõtetele, kellel puudub oma personaliosakond, kuid kellel on selge vajadus teadmiste, süsteemide ja inimkesksete lahenduste järele.</p>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-arrows-alt"></i></div>
+                    <h3 class="value-title">Paindlikkus</h3>
+                    <p class="value-description">Iga organisatsioon on erinev – meie lahendused kohanduvad teie vajaduste, tempo ja tööstiiliga.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-heart"></i></div>
+                    <h3 class="value-title">Inimlikkus</h3>
+                    <p class="value-description">Meie töös on keskmes inimene – kuulame, mõistame ja loome lahendusi, mis toetavad päriselt teie meeskonda.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-chess"></i></div>
+                    <h3 class="value-title">Strateegia</h3>
+                    <p class="value-description">Tugev personalijuhtimine algab selgest eesmärgist – aitame teil ehitada süsteeme, mis toetavad pikaajalist kasvu.</p>
+                </div>
+            </div>
+        </div>
+        <div class="decorative-circle circle-1"></div>
+        <div class="decorative-circle circle-2"></div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-overview" id="teenused">
+        <div class="container">
+            <h2 class="section-title">MEIE TEENUSED</h2>
+            <p class="section-subtitle">Pakume terviklikke personalijuhtimise lahendusi, mis kohanduvad teie ettevõtte vajadustega</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                    <h3 class="service-title">Paindlik Personalipartner</h3>
+                    <p class="service-excerpt">Personalidokumentide loomine ja korrastamine, personalitöö protsesside väljaarendamine, juhtide nõustamine, töötajate arenguvestlused, sisemine kommunikatsioon ja jooksev tugi.</p>
+                    <a href="teenused.html#paindlik-personalipartner" class="service-link">Loe edasi</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3 class="service-title">Siseaudit</h3>
+                    <p class="service-excerpt">Tööelukeskkonna hindamine, mis ühendab töötajate rahulolu, tööanalüüsi ja tööohutuse vaatenurgad ning annab sisendeid edasiseks arenguks.</p>
+                    <a href="teenused.html#siseaudit" class="service-link">Loe edasi</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+                    <h3 class="service-title">Töökeskkond ja Tööohutus</h3>
+                    <p class="service-excerpt">Spetsialistiteenused sh auditid, dokumentatsioon, riskianalüüs, töötervishoiu ja tööohutuse dokumentide koostamine ning valmisolek Tööinspektsiooni järelevalveks.</p>
+                    <a href="teenused.html#tookeskkond-ja-tooohutus" class="service-link">Loe edasi</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3 class="service-title">Personaliuuringute Läbiviimine</h3>
+                    <p class="service-excerpt">Küsimustike koostamine, anonüümne läbiviimine, tulemuste analüüs, juhtide nõustamine ja soovituste tegemine organisatsiooni arengu toetamiseks.</p>
+                    <a href="teenused.html#personaliuuringud" class="service-link">Loe edasi</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="service-title">HR-Tarkvarade Juurutamine</h3>
+                    <p class="service-excerpt">Vajaduste analüüs, sobiva tarkvara valimine ja juurutamise tugi palgaarvestuse, värbamise ja dokumendihalduse süsteemide jaoks.</p>
+                    <a href="teenused.html#hr-tarkvarad" class="service-link">Loe edasi</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3 class="service-title">Personalijuht Väikeettevõttesse</h3>
+                    <p class="service-excerpt">Paindlik ja professionaalne personalijuhtimise tugi väikeettevõtetele, kes vajavad abi lepingute, kommunikatsiooni ja töökohtade vastavusega.</p>
+                    <a href="teenused.html#personalijuht-vaikeettevottesse" class="service-link">Loe edasi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking" id="broneerimine">
+        <div class="container">
+            <h2 class="section-title">BRONEERI TASUTA KONSULTATSIOON</h2>
+            <p class="section-subtitle">Vali sobiv aeg ja broneeri 30-minutiline tasuta konsultatsioon. Räägime sinu ettevõtte vajadustest ja leiame parimad lahendused.</p>
+
+            <div class="booking-container">
+                <div class="custom-booking">
+                    <div class="booking-grid">
+
+                        <!-- Calendar Side -->
+                        <div class="calendar-side">
+                            <div class="calendar-header">
+                                <button class="calendar-nav prev" id="prevMonth">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <h3 class="calendar-month" id="currentMonth">Oktoober 2024</h3>
+                                <button class="calendar-nav next" id="nextMonth">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <div class="calendar-weekdays">
+                                <div class="weekday">E</div>
+                                <div class="weekday">T</div>
+                                <div class="weekday">K</div>
+                                <div class="weekday">N</div>
+                                <div class="weekday">R</div>
+                                <div class="weekday">L</div>
+                                <div class="weekday">P</div>
+                            </div>
+
+                            <div class="calendar-days" id="calendarDays">
+                                <!-- Days will be generated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Time Slots Side -->
+                        <div class="timeslots-side">
+                            <h4 class="timeslots-title">Vali sobiv kellaaeg</h4>
+                            <p class="selected-date" id="selectedDate">Vali esmalt kuupäev</p>
+
+                            <div class="timeslots-container" id="timeslotsContainer">
+                                <p style="text-align:center;color:#999;">Vali esmalt kuupäev kalendrist</p>
+                            </div>
+
+                            <div class="booking-form" id="bookingForm" style="display:none;">
+                                <h4>Sinu andmed</h4>
+                                <form id="appointmentForm">
+                                    <input type="hidden" id="selectedDateTime" name="datetime">
+
+                                    <div class="form-group">
+                                        <label for="name">Nimi *</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">E-mail *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="phone">Telefon *</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="message">Lühike kirjeldus (valikuline)</label>
+                                        <textarea id="message" name="message" rows="3"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-large">
+                                        Kinnita broneering
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">MIDA MEIE KLIENDID ÜTLEVAD</h2>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="quote-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">Meile meeldis Kareni teenuse juures paindlikkus ja professionaalsus, personaalne lähenemine ning sügavuti kaasa mõtlemine. Me hoidsime tellijana kokku tohutu hulga aega, mis oleks kulunud endal kõigi vajaminevate seadusandlike materjalide läbitöötamiseks.</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4 class="author-name">Reta Lepp</h4>
+                            <p class="author-position">Viljandi Centrum AS juhataja</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">Karen liitus AMV Metalli meeskonnaga ajal, mil meie organisatsioonil puudus selge visioon ja kujunenud töökultuur. Tema äärmiselt professionaalne lähenemine protsesside väljatöötamisele tegi need olulised muudatused nii juhatuse kui ka kogu kollektiivi jaoks sujuvaks ja mõistetavaks.</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4 class="author-name">AMV Metall</h4>
+                            <p class="author-position">Klient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button class="slider-prev" aria-label="Eelmine">‹</button>
+                <div class="slider-dots">
+                    <button class="dot active" aria-label="Testimonial 1"></button>
+                    <button class="dot" aria-label="Testimonial 2"></button>
+                </div>
+                <button class="slider-next" aria-label="Järgmine">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section" id="kontakt">
+        <div class="container">
+            <h2 class="cta-title">VALMIS ALUSTAMA?</h2>
+            <p class="cta-text">Broneeri oma tasuta konsultatsioon juba täna ja alustame teie ettevõtte personalijuhtimise paremaks tegemist!</p>
+
+            <div class="cta-buttons">
+                <a href="#broneerimine" class="btn btn-light btn-large">Broneeri tasuta konsultatsioon</a>
+                <a href="tel:+37256283286" class="btn btn-outline-light">Helista kohe</a>
+            </div>
+
+            <div class="cta-contact-info">
+                <div class="cta-contact-grid">
+                    <div class="cta-contact-item">
+                        <h4>KMpersonal OÜ</h4>
+                        <p>Registrikood: 17286377</p>
+                        <p>KMKR: EE102882427</p>
+                        <p>IBAN: EE942200221092169893</p>
+                    </div>
+                    <div class="cta-contact-item">
+                        <h4>Telefon</h4>
+                        <p><a href="tel:+37256283286">+372 56283286</a></p>
+                    </div>
+                    <div class="cta-contact-item">
+                        <h4>Email</h4>
+                        <p><a href="mailto:karen@kmpersonal.ee">karen@kmpersonal.ee</a></p>
+                        <p><a href="mailto:marina@kmpersonal.ee">marina@kmpersonal.ee</a></p>
+                    </div>
+                    <div class="cta-contact-item">
+                        <h4><a href="kkk.html">KKK</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="decorative-circle circle-cta-1"></div>
+        <div class="decorative-circle circle-cta-2"></div>
+    </section>
+
+</main>
+
+<script src="assets/js/homepage.js"></script>
+<script src="assets/js/booking-calendar.js"></script>
+
+<script>
+// Simple header hide/show on scroll
+(function() {
+    const header = document.querySelector('.site-header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= 0) {
+            header.classList.remove('header-hidden');
+            return;
+        }
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            // Scrolling DOWN - hide header
+            header.classList.add('header-hidden');
+            console.log('Hiding header');
+        } else if (currentScroll < lastScroll) {
+            // Scrolling UP - show header
+            header.classList.remove('header-hidden');
+            console.log('Showing header');
+        }
+
+        lastScroll = currentScroll;
+    });
+})();
+</script>
+</body>
+</html>

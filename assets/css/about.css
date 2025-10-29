@@ -1,0 +1,396 @@
+/* ==========================================================================
+   ABOUT PAGE STYLES
+   ========================================================================== */
+
+/* Ensure all elements use Open Sans */
+* {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* About Hero */
+.about-hero {
+  background: linear-gradient(135deg, var(--dark-green) 0%, var(--darker-green) 100%);
+  color: var(--white);
+  padding: 100px 20px 80px;
+  text-align: center;
+}
+
+.about-hero .page-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.about-hero .page-subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Story Section */
+.about-story {
+  background: var(--white);
+  padding: 80px 20px;
+}
+
+.about-story .container {
+  max-width: 900px;
+}
+
+.about-story h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.story-content {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-body);
+}
+
+.story-content p {
+  margin-bottom: 24px;
+}
+
+.story-highlight {
+  background: linear-gradient(135deg, #FCF7F0 0%, #F5E8F3 100%);
+  padding: 32px;
+  border-radius: 16px;
+  margin: 40px 0;
+  border-left: 4px solid var(--light-purple);
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-dark);
+}
+
+/* Philosophy Section */
+.about-philosophy {
+  background: var(--beige-bg);
+  padding: 80px 20px;
+}
+
+.about-philosophy .container {
+  max-width: 1000px;
+}
+
+.about-philosophy h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.philosophy-content {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-body);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Team Section */
+.about-team {
+  background: var(--white);
+  padding: 80px 20px;
+}
+
+.about-team h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team-member {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.team-member:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.team-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto 24px;
+  overflow: hidden;
+  border: 4px solid var(--light-purple);
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--light-purple) 0%, var(--dark-purple) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  color: var(--white);
+}
+
+.team-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 8px;
+}
+
+.team-role {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--light-purple);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin-bottom: 24px;
+}
+
+.team-strengths {
+  background: var(--beige-bg);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.team-strengths h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dark-purple);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.team-strengths ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-strengths li {
+  padding: 6px 0;
+  font-size: 15px;
+  color: var(--text-body);
+  position: relative;
+  padding-left: 24px;
+}
+
+.team-strengths li::before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  color: var(--light-purple);
+  font-weight: bold;
+}
+
+.team-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.team-contact a {
+  color: var(--dark-green);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.team-contact a:hover {
+  color: var(--dark-purple);
+}
+
+.team-contact i {
+  color: var(--light-purple);
+}
+
+/* Clients Section */
+.about-clients {
+  background: var(--beige-bg);
+  padding: 80px 20px;
+}
+
+.about-clients h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.client-logo {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.client-logo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.client-logo img {
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.client-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .about-hero {
+    padding: 80px 20px 60px;
+  }
+
+  .about-hero .page-title {
+    font-size: 32px;
+  }
+
+  .about-hero .page-subtitle {
+    font-size: 16px;
+  }
+
+  .about-story,
+  .about-philosophy,
+  .about-team,
+  .about-clients {
+    padding: 60px 20px;
+  }
+
+  .about-story h2,
+  .about-philosophy h2,
+  .about-team h2,
+  .about-clients h2 {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .story-content,
+  .philosophy-content {
+    font-size: 16px;
+  }
+
+  .story-highlight {
+    font-size: 17px;
+    padding: 24px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .team-member {
+    padding: 32px 24px;
+  }
+
+  .team-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team-name {
+    font-size: 24px;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .client-logo {
+    padding: 24px;
+    min-height: 100px;
+  }
+}
+
+/* Tablet Responsive */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-hero .page-title {
+    font-size: 42px;
+  }
+
+  .about-story h2,
+  .about-philosophy h2,
+  .about-team h2,
+  .about-clients h2 {
+    font-size: 36px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
