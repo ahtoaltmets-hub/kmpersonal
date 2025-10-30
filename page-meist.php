@@ -120,7 +120,7 @@ get_header(); ?>
     <!-- Clients Section -->
     <section class="about-clients">
         <div class="container">
-            <h2>Meie Kliendid</h2>
+            <h2>Meid Soovitavad</h2>
 
             <div class="clients-grid">
                 <div class="client-logo">
